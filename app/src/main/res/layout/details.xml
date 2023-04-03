@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--   the card view which will be added in the Shoe List  -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical"
+            android:padding="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/shoeName_text"
+                android:text= "@string/shoe_name"
+                style="@style/Text_Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/shoeSize_text"
+                android:text="@string/shoe_size"
+                style="@style/Text_Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/shoeCompany_text"
+                android:text="@string/company"
+                style="@style/Text_Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/shoeDescription_text"
+                android:text="@string/description"
+                style="@style/Text_Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="212dp"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical"
+            android:padding="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/shoeName"
+                style="@style/Text_Style"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#3A4EBC" />
+
+            <TextView
+                android:id="@+id/shoeSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#3A4EBC"
+                style="@style/Text_Style" />
+
+            <TextView
+                android:id="@+id/shoeCompany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#3A4EBC"
+                style="@style/Text_Style" />
+
+            <TextView
+                android:id="@+id/shoeDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#3A4EBC"
+                style="@style/Text_Style" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
